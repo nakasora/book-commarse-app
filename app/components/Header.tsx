@@ -31,12 +31,12 @@ const Header = async () => {
           </Link>
 
           {user ? (
-            <button
-              //   onClick={() => signOut({ callbackUrl: "/login" })}
+            <Link
+              href={"/api/auth/signout"}
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               ログアウト
-            </button>
+            </Link>
           ) : (
             ""
           )}

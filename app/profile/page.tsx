@@ -43,10 +43,7 @@ export default async function ProfilePage() {
       <div className="flex items-center gap-6">
         {detailBooks.map((detailBook: BookType) => {
           return (
-            <PurchaseDetailBook
-              key={detailBook.id}
-              detailBook={detailBook}
-            />
+            <PurchaseDetailBook key={detailBook.id} detailBook={detailBook} />
           );
         })}
       </div>

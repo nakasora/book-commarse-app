@@ -4,10 +4,10 @@ import Image from "next/image";
 import { BookType } from "../types/types";
 
 type detailBookProps = {
-  detailBook:BookType;
-}
+  detailBook: BookType;
+};
 
-const PurchaseDetailBook = ({detailBook}:detailBookProps) => {
+const PurchaseDetailBook = ({ detailBook }: detailBookProps) => {
   return (
     <Link
       href={`/book/${detailBook.id}`}
